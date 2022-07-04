@@ -30,9 +30,7 @@ def vstack():
 
 def mgrid():
     x, y = np.mgrid[1:3:1, 2:4:0.5]
-    grid = np.c_[x.ravel(), y.ravel()]
+    grid = np.c_[x.ravel(), y.ravel()]  # 叠加矩阵  .c_ 按列    .r_ 按行
     print("x:\n", x)
     print("y:\n", y)
     print("grid:\n", grid)
-
-
